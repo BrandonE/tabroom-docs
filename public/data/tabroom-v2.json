@@ -1,0 +1,30 @@
+{
+    "name": "Tabroom",
+    "description": "An API for Tabroom.com",
+    "protocol": "rest",
+    "basePath": "https://tabroom-node.herokuapp.com",
+    "publicPath": "",
+    "auth": {
+        "key": {
+            "param": "key"
+        }
+    },
+    "headers": {
+        "Content-Type": "application/vnd.tabroom+json; version=2",
+        "Accept": "application/vnd.tabroom+json; version=2"
+    },
+    "resources": {
+        "Tournaments": {
+            "methods": {
+                "Tournaments": {
+                    "name": "Tournaments",
+                    "path": "/tournaments/",
+                    "httpMethod": "GET",
+                    "description": "Gets all of the tournaments.",
+                    "parameters": {
+                    }
+                }
+            }
+        }
+    }
+}

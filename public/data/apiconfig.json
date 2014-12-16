@@ -19,5 +19,8 @@
     },
     "requestbin": {
         "name": "Requestb.in"
+    },
+    "tabroom-v2": {
+        "name": "Tabroom v2"
     }
 }
