@@ -33,6 +33,102 @@
                             "required": false,
                             "default": "id",
                             "description": "The attribute(s) to sort the tournaments by, delimited by comma. Preceding an attribute with a minus sign results in a descending order."
+                        },
+                        "id": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by id"
+                        },
+                        "name": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by name"
+                        },
+                        "start": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by start"
+                        },
+                        "end": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by end"
+                        },
+                        "reg_start": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by reg_start"
+                        },
+                        "reg_end": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by reg_end"
+                        },
+                        "timestamp": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by timestamp"
+                        },
+                        "hidden": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by hidden"
+                        },
+                        "approved": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by approved"
+                        },
+                        "webname": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by webname"
+                        },
+                        "tz": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by tz"
+                        },
+                        "state": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by state"
+                        },
+                        "country": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by country"
+                        },
+                        "foreign_site": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by foreign_site"
+                        },
+                        "foreign_id": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by foreign_id"
+                        },
+                        "created_by": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "Filter by created_by"
                         }
                     }
                 },
