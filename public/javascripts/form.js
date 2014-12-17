@@ -101,7 +101,7 @@ $(document).ready(function() {
                     parameterOptions = {
                         "name": "values_" + paramCount,
                         "toolbarSticky": true,
-                        "size": 20,
+                        "size": 18,
                         "number": paramCount,
                         "paramName": parameter,
                         "items": {
@@ -112,7 +112,7 @@ $(document).ready(function() {
                         },
                         "fields": {
                             "item": {
-                                "size": 20,
+                                "size": 18,
                                 "number": paramCount
                             }
                         }
@@ -148,7 +148,7 @@ $(document).ready(function() {
                             var fieldsOptions = {
                                 "item": {
                                     "placeholder": "required",
-                                    "size": 20
+                                    "size": 18
                                 }
                             }
                             parameterOptions["fields"] = fieldsOptions;
@@ -183,7 +183,7 @@ $(document).ready(function() {
                         //Sets options to textarea if necessary
                         if (paramReference.type == "textarea") {
                             parameterOptions["type"] = "textarea";
-                            parameterOptions["cols"] = 20;
+                            parameterOptions["cols"] = 18;
                             paramReference.type = "string";
                         }
 
@@ -198,7 +198,7 @@ $(document).ready(function() {
                             if ((paramReference.location && paramReference.location == "body") || !paramReference.location) addLocationBody(paramReference);
                             for (subParam in paramReference.properties) {
                                 parameterOptions["fields"][subParam] = {
-                                    "size": 20,
+                                    "size": 18,
                                     "number": paramCount,
                                     "paramName": parameter
                                 };

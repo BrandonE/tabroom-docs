@@ -22,6 +22,12 @@
                     "httpMethod": "GET",
                     "description": "Gets all of the tournaments.",
                     "parameters": {
+                        "sort": {
+                            "type": "string",
+                            "required": false,
+                            "default": "id",
+                            "description": "The attribute(s) to sort the tournaments by, delimited by comma. Preceding an attribute with a minus sign results in a descending order."
+                        }
                     }
                 }
             }

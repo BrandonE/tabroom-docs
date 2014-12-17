@@ -80,7 +80,7 @@ block content
 
   ul
       - each resource, resourceName in apiInfo.resources
-          li.resource
+          li.resource.expanded
               h3.title
                   span.name
                       a(href='#'+resourceName.replace(/\s/g, '-'))!=resourceName

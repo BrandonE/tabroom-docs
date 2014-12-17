@@ -15,6 +15,7 @@ var livedocs = (function() {
         switch (true) {
             case /application\/javascript/.test(contentType):
             case /application\/json/.test(contentType):
+			case /application\/vnd\.tabroom\+json/.test(contentType):
                 // If result is JSON in string format, objectify it so we can format it.
                 if (typeof data == 'string') {
                     try {
