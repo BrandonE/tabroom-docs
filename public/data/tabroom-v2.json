@@ -1,6 +1,6 @@
 {
-    "name": "Tabroom",
-    "description": "An API for Tabroom.com",
+    "name": "Tabroom v2 API",
+    "description": "An API for Tabroom.com, version 2",
     "protocol": "rest",
     "basePath": "https://tabroom-node.herokuapp.com",
     "publicPath": "",
@@ -16,8 +16,8 @@
     "resources": {
         "Tournaments": {
             "methods": {
-                "Tournaments": {
-                    "name": "Tournaments",
+                "All": {
+                    "name": "All",
                     "path": "/tournaments/",
                     "httpMethod": "GET",
                     "description": "Gets all of the tournaments.",
@@ -33,6 +33,26 @@
                             "required": false,
                             "default": "id",
                             "description": "The attribute(s) to sort the tournaments by, delimited by comma. Preceding an attribute with a minus sign results in a descending order."
+                        }
+                    }
+                },
+                "Individual": {
+                    "name": "Individual",
+                    "path": "/tournaments/{ids}",
+                    "httpMethod": "GET",
+                    "description": "Gets a tournament or set of tournaments.",
+                    "parameters": {
+						"ids": {
+							"type": "string",
+                            "required": true,
+                            "default": "",
+                            "description": "The id(s) of the tournament(s) to get, delimited by comma."
+						},
+                        "fields": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "The attribute(s) to select, delimited by comma. Leaving this blank selects everything."
                         }
                     }
                 }
