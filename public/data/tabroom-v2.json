@@ -22,6 +22,12 @@
                     "httpMethod": "GET",
                     "description": "Gets all of the tournaments.",
                     "parameters": {
+                        "fields": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "The attribute(s) to select, delimited by comma. Leaving this blank selects everything."
+                        },
                         "sort": {
                             "type": "string",
                             "required": false,

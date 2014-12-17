@@ -291,7 +291,7 @@
             var response = JSON.parse(result.responseText);
             if (response.call) {
                 $('pre.call', resultContainer)
-                    .text(response.call);
+                    .text(unescape(response.call));
             }
             if (response.requestHeaders && !$.isEmptyObject(response.requestHeaders)) {
                 $('pre.requestHeaders', resultContainer)
