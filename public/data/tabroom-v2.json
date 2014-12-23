@@ -151,6 +151,32 @@
                             "description": "The attribute(s) to select, delimited by comma. Leaving this blank selects everything."
                         }
                     }
+                },
+                "Current": {
+                    "name": "Current",
+                    "path": "/tournaments/current",
+                    "httpMethod": "GET",
+                    "description": "Gets all of the tournaments currently happening.",
+                    "parameters": {
+                        "fields": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "The attribute(s) to select, delimited by comma. Leaving this blank selects everything."
+                        },
+                        "sort": {
+                            "type": "string",
+                            "required": false,
+                            "default": "id",
+                            "description": "The attribute(s) to sort the tournaments by, delimited by comma. Preceding an attribute with a minus sign results in a descending order."
+                        },
+                        "timestring": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "description": "The timestring in ISO format to override the current time (UTC). Leaving this blank uses the actual current time."
+                        }
+                    }
                 }
             }
         }
